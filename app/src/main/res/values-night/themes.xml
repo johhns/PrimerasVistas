@@ -3,7 +3,7 @@
     <style name="Theme.PrimerasVistas" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/primaryDarkColor</item>
-        <item name="colorPrimaryVariant">@color/design_default_color_primary_variant</item>
+        <item name="colorPrimaryVariant">@color/secondaryDarkColor</item>
         <item name="colorOnPrimary">@color/black</item>
         <!-- Secondary brand color. -->
         <item name="colorSecondary">@color/secondaryDarkColor</item>
