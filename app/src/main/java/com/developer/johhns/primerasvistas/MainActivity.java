@@ -10,7 +10,7 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button btnVistas, btnLinearLayout, btnTableLayout , btnConstrLayout;
+    Button btnVistas, btnLinearLayout, btnTableLayout , btnConstrLayout, btnCalculadora ;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
         btnLinearLayout = findViewById( R.id.btnLinearLayout ) ;
         btnTableLayout  = findViewById( R.id.btnTableLayout ) ;
         btnConstrLayout = findViewById( R.id.btnConstLayout ) ;
+        btnCalculadora  = findViewById( R.id.btnCalculadora ) ;
 
         btnVistas.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -53,7 +54,12 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-
+        btnCalculadora.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity( new Intent( view.getContext() , Calculadora.class) );
+            }
+        });
 
     }
 }
